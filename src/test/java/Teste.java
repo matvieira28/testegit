@@ -13,7 +13,8 @@ public class Teste {
 		long f = 363373763383838L;
 		float g = 9.292992929e+35F;
 		double h = 1.8829782937827728e+30D;
-		
+		double t = 1.88297827728e+30D;
+
 		
 		System.out.println( a);
 		System.out.println( b);
@@ -23,7 +24,8 @@ public class Teste {
 		System.out.println( f);
 		System.out.println( g);
 		System.out.println(h);
-		
+		System.out.println(t);
+
 		
 		
 		
