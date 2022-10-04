@@ -14,6 +14,7 @@ public class Teste {
 		float g = 9.292992929e+35F;
 		double h = 1.8829782937827728e+30D;
 		double t = 1.88297827728e+30D;
+		double o = 1.27728e+30D;
 
 		
 		System.out.println( a);
@@ -25,6 +26,7 @@ public class Teste {
 		System.out.println( g);
 		System.out.println(h);
 		System.out.println(t);
+		System.out.println(o);
 
 		
 		
