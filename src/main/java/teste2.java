@@ -12,14 +12,7 @@ public class teste2 {
 	String Nome;
 	Double valor;
 	
-	
-	
-	
-	
-	
-	
-	
-	
+	String Nome1;
 	
 	
 	
