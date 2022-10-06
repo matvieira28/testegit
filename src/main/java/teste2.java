@@ -5,8 +5,6 @@ public class teste2 {
 	byte b = 127;
 	short c = 32767;
 	char d = 76;
-	char e = 35;
-	
 	
 	
 	String Nome;
@@ -14,12 +12,7 @@ public class teste2 {
 	
 	String Nome1;
     String Nome2;
-    
-    
-    
-    
-    
-    
+    String Nome3;
     
     
     
