@@ -13,10 +13,17 @@ public class teste2 {
 	Double valor;
 	
 	String Nome1;
-	
-	
-	
-	
-	
-	
+    String Nome2;
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 }
