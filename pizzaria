@@ -1,0 +1,242 @@
+#Pizzaria 
+## METODO DE ESTUDO##
+
+# REPETIR 10X *
+# FAZER TESTES
+# PROCURAR ERROS COMENTANDO CÓDIGOS
+# UTLIZAR MINDMISTER
+# PRAZO
+
+##POSSO FAZER##
+#Da pra criar uma conversa com a pessoa, utilizando a estrtura de if e else
+## Para Imprimir 2 variable utilizar virgula 
+
+# Aspas => limite de caracteres    = igualdade, usar em difinir variavel ou equação de resultado
+# parenteses => prioridade 
+
+# as 2 formas imprimem o resultado 
+# Facultativo tem a função de representar o valor do int, enquanto dentro da cadeia vai representar os valores
+# 25+3
+
+# teminar amanhã
+#=============================================================================================#
+
+#estrutura de repetição swith case: condições de decisão em python se chama match case 
+# Amanhã match case em funcionalidades=
+# depois FOR estrutura de repetição#
+# macht case estrutura de decisão
+# if e else estrutura de condição
+
+# missaão 2 formas de pagamento pix e cartão
+
+print ('Bom dia')
+print ('E um prazer a sua visita ')
+print ('Nossos sabores são:')
+print ('[CALABRESA]')
+print ('[MUSSARELA]')
+print ('[PORTUGUESA]')
+
+
+
+pizza = str (input('Pode escolher as pizzas '))
+match pizza != 15:
+    case 1:
+        print('CALABRESA')
+    case 2:
+        print('PORTUGUESA')
+    case 3:
+        print('MUSSARELA') 
+    case 4:
+        print('PEPPERONI')
+        #anderline seria uma variavel sem      
+    case _:
+        print('ok,obrigado pela atenção')
+
+#selecionar 2 formas de pagamento como pix e cartão de forma de numero
+# depois entrelaçar com mach case
+# fazer em classes pra ficar mais facil de entender
+
+print('Existe 2 formas de fazer o pagemento: pix ou cartão')
+print('')
+
+pagamento = int (input('Se preferir PIX digite [1] caso cartão [2]'))
+
+if pagamento == 1:
+    print('OK, o pix é 11970329461')
+    
+else: 
+    print('OK, vamos de cartão') 
+
+
+
+#implementar tecnica dp video ou substituir por case
+text = int (input('Por favor digite aqui: '))
+if text == 1803:
+    print('pagemento aprovado')
+
+elif text == 11970329461:
+    print('pagamento de pix aprovado')
+
+else :
+    print('Ouve alguma falha no pagamento')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#========================================================
+
+
+# cardapio = str (input('Pode selecionar seu pedido: '))
+# if cardapio == 'calabresa':
+#     print('perfeito')
+# elif cardapio == 'mussarela':
+#     print('ok')
+# elif cardapio == 'portuguesa':
+#     print('beleza')
+# else:
+#     print('Nada msm, obrigado pela atenção')
+# text  = str (input('Qual o seu nome?'))
+# if  text == 'Mateus':
+#     print('Que nome bonito')
+#========================================================#
+# else : 
+#     print('ok, nome basico')
+#     print('Bom dia, {}'.format(text))
+
+
+
+
+
+
+
+
+
+
+
+# text = str(input('Fique a vontade para escolher'))
+# print ('Vá para o proximo passo')
+# format tem que ter cuidado
+
+#========================================================#
+
+
+# text  = str (input('deseja borda recheada?'))
+# if  text == 'sim':
+#     print('ok,vou providenciar')
+# else : 
+#     print('ok')
+# nunca dar espaço no terminal
+# ficar atento aos detalhes
+
+
+
+#========================================================#
+
+
+
+
+
+#     print('que nome feio kk')
+ 
+
+
+# folga = str (input('Automação'))
+# print ('vai com Deus')
+
+# Facutativo = int (25 + 3)
+# print (Facutativo)
+
+
+
+
+
+
+#========================================================
+
+# Facutativo = int ((25 + 3))
+# str = ('resultado')
+# print (str + Facutativo)
+
+
+# int  = (54 + 32)
+# str = ('valor')
+# print (str, int)
+#========================================================
+
+
+
+
+
+
+# # str = text (input ('input seria o retorno de resposta'))
+
+
+
+
+
+
+
+
+#========================================================
+
+# ## FOCO PARA PROXIMO ESTUDO
+# text = str(input('Fique a vontade para escolher'))
+
+# if text == 'MUSSARELA':
+#     print ('Parabens')
+
+# elif text >= 'FRANGO':
+#     print ('Boa Escolha!'.format(text))
+
+# elif text >= 'CALABRESA':
+#     print ('Bom apetite!'.format(text))
+
+# else: 
+#     print ('PORTUGUESA')
+#========================================================
+
+
+
+
+
+# nome = str(input('Qual o seu nome ?'))
+# if nome == 'MATEUS':
+#     print ('Que lindo nome você tem')
+# else:
+#     print ('Seu nome e tão normal')
+#     print ('Bom dia {}'.format(nome))    
+
+#========================================================
+
+
+
+
+
+
+
+
+
+
+
+
+

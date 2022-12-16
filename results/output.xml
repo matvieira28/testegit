@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0 (Python 3.10.5 on win32)" generated="20221116 10:55:12.094" rpa="false" schemaversion="3">
+<suite id="s1" name="Testedepython" source="C:\Users\Dell Latitude\OneDrive\Documentos\testedepython">
+<suite id="s1-s1" name="Estrutura" source="C:\Users\Dell Latitude\OneDrive\Documentos\testedepython\estrutura.robot">
+<test id="s1-s1-t1" name="Cenário 1: teste de abrir site youtube" line="14">
+<kw name="Abrir navegador" type="SETUP">
+<msg timestamp="20221116 10:55:12.628" level="FAIL">No keyword with name 'Abrir navegador' found.</msg>
+<status status="FAIL" starttime="20221116 10:55:12.604" endtime="20221116 10:55:12.635"/>
+</kw>
+<kw name="Fechar navegador" type="TEARDOWN">
+<msg timestamp="20221116 10:55:12.673" level="FAIL">No keyword with name 'Fechar navegador' found.</msg>
+<status status="FAIL" starttime="20221116 10:55:12.664" endtime="20221116 10:55:12.676">No keyword with name 'Fechar navegador' found.</status>
+</kw>
+<doc>acesssar youtube e dar like
+criar um comentario</doc>
+<tag>Site</tag>
+<status status="FAIL" starttime="20221116 10:55:12.570" endtime="20221116 10:55:12.695">Setup failed:
+No keyword with name 'Abrir navegador' found.
+
+Also teardown failed:
+No keyword with name 'Fechar navegador' found.</status>
+</test>
+<status status="FAIL" starttime="20221116 10:55:12.179" endtime="20221116 10:55:12.741"/>
+</suite>
+<status status="FAIL" starttime="20221116 10:55:12.107" endtime="20221116 10:55:12.747"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">Site</stat>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Testedepython">Testedepython</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="Estrutura">Testedepython.Estrutura</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20221116 10:55:12.074" level="ERROR">Error in file 'C:\Users\Dell Latitude\OneDrive\Documentos\testedepython\estrutura.robot' on line 3: Non-existing setting '[Documentation]'. Did you mean:
+    Documentation</msg>
+<msg timestamp="20221116 10:55:12.565" level="ERROR">Error in file 'C:\Users\Dell Latitude\OneDrive\Documentos\testedepython\estrutura.robot' on line 4: Resource file 'youtube_resource.robot' does not exist.</msg>
+</errors>
+</robot>

@@ -1,0 +1,23 @@
+
+#EXEMPLO VAI IMPRIMIR
+text = 'automação.com'
+print('text')
+
+#EXEMPLO METODO ELE SELECIONA UM CARACTERE
+texto = 'matvieira.com'
+print (texto[5])
+
+#EXEMPLO DE SELECIONA A NUMERAÇÃO DO CARACTERE
+teste = 'SUPONDO.14'
+print (teste.find("14"))
+#Outra opção
+print (texto [5:9])
+print (texto [:5])
+print ('Bem vindo a Pizzaria do Juca')
+print ("Por favor fiqune a vontade:")
+
+
+
+# Opencv tratamento de imagens: Converter imagem, transformar em preto e branco, criar imagem.
+# Tesseract: trabalho em volta de leitura de texto ou reconhecimento de texto, extrair textos da imagem.
+# print como forma de reconhecer textos
