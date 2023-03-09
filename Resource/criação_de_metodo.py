@@ -1,0 +1,17 @@
+#criamos funções
+def teste_de_case(dia):
+
+    match dia:
+        case 1:
+            return 'Domingo'
+    
+        case 2:
+            return 'Segunda'
+        
+        
+print(teste_de_case(1))
+
+
+
+def  retestar():
+    print("terste")

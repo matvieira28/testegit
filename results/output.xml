@@ -1,44 +1,403 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.0 (Python 3.10.5 on win32)" generated="20221116 10:55:12.094" rpa="false" schemaversion="3">
+<robot generator="Robot 6.0 (Python 3.10.5 on win32)" generated="20230308 22:44:59.674" rpa="false" schemaversion="3">
 <suite id="s1" name="Testedepython" source="C:\Users\Dell Latitude\OneDrive\Documentos\testedepython">
-<suite id="s1-s1" name="Estrutura" source="C:\Users\Dell Latitude\OneDrive\Documentos\testedepython\estrutura.robot">
-<test id="s1-s1-t1" name="Cenário 1: teste de abrir site youtube" line="14">
-<kw name="Abrir navegador" type="SETUP">
-<msg timestamp="20221116 10:55:12.628" level="FAIL">No keyword with name 'Abrir navegador' found.</msg>
-<status status="FAIL" starttime="20221116 10:55:12.604" endtime="20221116 10:55:12.635"/>
+<suite id="s1-s1" name="TestCase" source="C:\Users\Dell Latitude\OneDrive\Documentos\testedepython\TestCase">
+<suite id="s1-s1-s1" name="Estudobinary" source="C:\Users\Dell Latitude\OneDrive\Documentos\testedepython\TestCase\Estudobinary.robot">
+<test id="s1-s1-s1-t1" name="CT01 - Automação da Meta Diaria" line="13">
+<kw name="Abrir Operações" library="Keywords" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${CENTRAL_BOTS}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230308 22:45:05.653" level="INFO">Opening browser 'chrome' to base url 'https://centralbots.com.br/bot/bot.html?update=1677935068#'.</msg>
+<status status="PASS" starttime="20230308 22:45:05.650" endtime="20230308 22:45:19.043"/>
 </kw>
-<kw name="Fechar navegador" type="TEARDOWN">
-<msg timestamp="20221116 10:55:12.673" level="FAIL">No keyword with name 'Fechar navegador' found.</msg>
-<status status="FAIL" starttime="20221116 10:55:12.664" endtime="20221116 10:55:12.676">No keyword with name 'Fechar navegador' found.</status>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230308 22:45:19.045" endtime="20230308 22:45:19.307"/>
 </kw>
-<doc>acesssar youtube e dar like
-criar um comentario</doc>
-<tag>Site</tag>
-<status status="FAIL" starttime="20221116 10:55:12.570" endtime="20221116 10:55:12.695">Setup failed:
-No keyword with name 'Abrir navegador' found.
+<status status="PASS" starttime="20230308 22:45:05.649" endtime="20230308 22:45:19.309"/>
+</kw>
+<kw name="Cadastro da Central Bots" library="Keywords">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${EMAIL_CENTRAL}</arg>
+<arg>15</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230308 22:45:19.313" endtime="20230308 22:45:19.392"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${EMAIL_CENTRAL}</arg>
+<arg>matvieira.souza18@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230308 22:45:19.394" level="INFO">Typing text 'matvieira.souza18@gmail.com' into text field '//input[@type="text"]'.</msg>
+<status status="PASS" starttime="20230308 22:45:19.393" endtime="20230308 22:45:19.681"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${SENHA_CENTRAL}</arg>
+<arg>Transformado07</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230308 22:45:19.688" level="INFO">Typing text 'Transformado07' into text field '//input[@type="password"]'.</msg>
+<status status="PASS" starttime="20230308 22:45:19.685" endtime="20230308 22:45:19.942"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${LOGIN_CENTRAL}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230308 22:45:19.944" level="INFO">Clicking element '//button[@type="submit"]'.</msg>
+<status status="PASS" starttime="20230308 22:45:19.942" endtime="20230308 22:45:22.473"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${FECHAR}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230308 22:45:22.477" level="INFO">Clicking element '//button[@class="btn btn-secondary"]'.</msg>
+<status status="PASS" starttime="20230308 22:45:22.474" endtime="20230308 22:45:22.576"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${MEUS_BOTS}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230308 22:45:22.584" level="INFO">Clicking element '//*[@id="meus-bots-bt"]'.</msg>
+<status status="PASS" starttime="20230308 22:45:22.577" endtime="20230308 22:45:22.928"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230308 22:45:24.931" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230308 22:45:22.928" endtime="20230308 22:45:24.934"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${CONTINUAR}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230308 22:45:24.939" level="INFO">Clicking element '//*[@id="avisoModal"]/div/div/div[3]/a'.</msg>
+<status status="PASS" starttime="20230308 22:45:24.936" endtime="20230308 22:45:28.329"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Login_bot}</arg>
+<arg>15</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230308 22:45:28.332" endtime="20230308 22:45:30.525"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230308 22:45:32.535" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230308 22:45:30.525" endtime="20230308 22:45:32.537"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Login_bot}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230308 22:45:32.539" level="INFO">Clicking element '//*[@id="myLogin"]'.</msg>
+<status status="PASS" starttime="20230308 22:45:32.537" endtime="20230308 22:45:35.354"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230308 22:45:37.368" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230308 22:45:35.355" endtime="20230308 22:45:37.370"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${EMAIL_BINARY}</arg>
+<arg>matvieira.souza18@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230308 22:45:37.374" level="INFO">Typing text 'matvieira.souza18@gmail.com' into text field '//*[@id="txtEmail"]'.</msg>
+<status status="PASS" starttime="20230308 22:45:37.370" endtime="20230308 22:45:37.622"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${SENHA_BINARY}</arg>
+<arg>Acessomoney18</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230308 22:45:37.624" level="INFO">Typing text 'Acessomoney18' into text field '//*[@id="txtPass"]'.</msg>
+<status status="PASS" starttime="20230308 22:45:37.623" endtime="20230308 22:45:37.792"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${LOGIN_BINARY}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230308 22:45:37.793" level="INFO">Clicking element '//*[@id="lost-password-container"]/button'.</msg>
+<status status="PASS" starttime="20230308 22:45:37.792" endtime="20230308 22:45:40.424"/>
+</kw>
+<status status="PASS" starttime="20230308 22:45:19.310" endtime="20230308 22:45:40.425"/>
+</kw>
+<kw name="Acessar Conta Teste" library="Keywords">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${CONTA_BINARY}</arg>
+<arg>50</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230308 22:45:40.432" endtime="20230308 22:45:48.291"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${CONTA_BINARY}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230308 22:45:48.295" level="INFO">Clicking element '//*[@id="main-account"]/li/a/div[1]/div[2]'.</msg>
+<status status="PASS" starttime="20230308 22:45:48.291" endtime="20230308 22:46:04.039"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230308 22:46:06.046" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230308 22:46:04.042" endtime="20230308 22:46:06.047"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${VIRTUAL}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230308 22:46:06.049" level="INFO">Clicking element '//*[@id="all-accounts"]/li/ul/div/a[2]/li/div'.</msg>
+<status status="PASS" starttime="20230308 22:46:06.047" endtime="20230308 22:46:06.181"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230308 22:46:08.192" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230308 22:46:06.182" endtime="20230308 22:46:08.194"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${YES}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230308 22:46:08.200" level="INFO">Clicking element '//button[@class="button-primary"]'.</msg>
+<status status="PASS" starttime="20230308 22:46:08.195" endtime="20230308 22:46:08.521"/>
+</kw>
+<status status="PASS" starttime="20230308 22:45:40.426" endtime="20230308 22:46:08.524"/>
+</kw>
+<kw name="Operações de Teste" library="Keywords">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${CONTA_BINARY}</arg>
+<arg>20</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230308 22:46:08.618" endtime="20230308 22:46:08.823"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>4</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230308 22:46:12.828" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20230308 22:46:08.826" endtime="20230308 22:46:12.829"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${BOTS}</arg>
+<arg>20</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230308 22:46:12.830" endtime="20230308 22:46:15.782"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>4</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230308 22:46:19.797" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20230308 22:46:15.783" endtime="20230308 22:46:19.798"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BOTS}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230308 22:46:19.800" level="INFO">Clicking element '//*[@id="app-itens"]/a[1]/div'.</msg>
+<status status="PASS" starttime="20230308 22:46:19.798" endtime="20230308 22:46:19.959"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>4</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230308 22:46:23.972" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20230308 22:46:19.960" endtime="20230308 22:46:23.974"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${ROBÔ_LINE}</arg>
+<arg>20</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230308 22:46:23.974" endtime="20230308 22:46:24.025"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>4</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230308 22:46:28.038" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20230308 22:46:24.026" endtime="20230308 22:46:28.039"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${ROBÔ_LINE}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230308 22:46:28.043" level="INFO">Clicking element '//*[@id="choose-bot-container"]/div/div/div[11]/div/div[1]/div'.</msg>
+<status status="PASS" starttime="20230308 22:46:28.041" endtime="20230308 22:46:28.259"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>4</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230308 22:46:32.264" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20230308 22:46:28.260" endtime="20230308 22:46:32.267"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${APORTE_INICIAL}</arg>
+<arg>0.35</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230308 22:46:32.277" level="INFO">Typing text '0.35' into text field '//*[@id="choose-bot-fieldset"]/div/div[2]/input'.</msg>
+<status status="PASS" starttime="20230308 22:46:32.272" endtime="20230308 22:46:32.540"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>4</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230308 22:46:36.556" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20230308 22:46:32.540" endtime="20230308 22:46:36.558"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${APÓS_VITÓRIA}</arg>
+<arg>0.35</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230308 22:46:36.563" level="INFO">Typing text '0.35' into text field '//*[@id="choose-bot-fieldset"]/div/div[3]/input'.</msg>
+<status status="PASS" starttime="20230308 22:46:36.559" endtime="20230308 22:46:36.799"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>4</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230308 22:46:40.805" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20230308 22:46:36.801" endtime="20230308 22:46:40.808"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${STOP_LOSS}</arg>
+<arg>50</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230308 22:46:40.821" level="INFO">Typing text '50' into text field '//*[@id="choose-bot-fieldset"]/div/div[4]/input'.</msg>
+<status status="PASS" starttime="20230308 22:46:40.809" endtime="20230308 22:46:41.056"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>4</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230308 22:46:45.070" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20230308 22:46:41.057" endtime="20230308 22:46:45.074"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${LUCRO_ESPERADO}</arg>
+<arg>5</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230308 22:46:45.082" level="INFO">Typing text '5' into text field '//*[@id="choose-bot-fieldset"]/div/div[5]/input'.</msg>
+<status status="PASS" starttime="20230308 22:46:45.075" endtime="20230308 22:46:45.292"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>4</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230308 22:46:49.305" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20230308 22:46:45.293" endtime="20230308 22:46:49.308"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${DURAÇÃO}</arg>
+<arg>1</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230308 22:46:49.318" level="INFO">Typing text '1' into text field '//*[@id="choose-bot-fieldset"]/div/div[6]/input'.</msg>
+<status status="PASS" starttime="20230308 22:46:49.310" endtime="20230308 22:46:49.593"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>4</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230308 22:46:53.595" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20230308 22:46:49.594" endtime="20230308 22:46:53.604"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${CARREGAR}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230308 22:46:53.612" level="INFO">Clicking element '//*[@id="choose-bot-dialog"]/div/div[3]/button[2]'.</msg>
+<status status="PASS" starttime="20230308 22:46:53.606" endtime="20230308 22:46:53.843"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>4</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230308 22:46:57.853" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20230308 22:46:53.844" endtime="20230308 22:46:57.855"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${PLAY}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230308 22:46:57.861" level="INFO">Clicking element '//*[@id="summaryRunButton"]'.</msg>
+<status status="PASS" starttime="20230308 22:46:57.857" endtime="20230308 22:46:58.085"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${PLAY}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230308 22:46:58.088" level="INFO">Clicking element '//*[@id="summaryRunButton"]'.</msg>
+<msg timestamp="20230308 22:46:58.284" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230308 22:46:58.285" level="FAIL">ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=110.0.5481.105)
+Stacktrace:
+Backtrace:
+	(No symbol) [0x00716643]
+	(No symbol) [0x006ABE21]
+	(No symbol) [0x005AD960]
+	(No symbol) [0x005E23A7]
+	(No symbol) [0x005D6B13]
+	(No symbol) [0x005FFD7C]
+	(No symbol) [0x005D641F]
+	(No symbol) [0x006000D4]
+	(No symbol) [0x00616B09]
+	(No symbol) [0x005FFB76]
+	(No symbol) [0x005D49C1]
+	(No symbol) [0x005D5E5D]
+	GetHandleVerifier [0x0098A142+2497106]
+	GetHandleVerifier [0x009B85D3+2686691]
+	GetHandleVerifier [0x009BBB9C+2700460]
+	GetHandleVerifier [0x007C3B10+635936]
+	(No symbol) [0x006B4A1F]
+	(No symbol) [0x006BA418]
+	(No symbol) [0x006BA505]
+	(No symbol) [0x006C508B]
+	BaseThreadInitThunk [0x763300F9+25]
+	RtlGetAppContainerNamedObjectPath [0x77967BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x77967B8E+238]
+</msg>
+<status status="FAIL" starttime="20230308 22:46:58.086" endtime="20230308 22:46:58.293"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${PLAY}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230308 22:46:58.294" endtime="20230308 22:46:58.294"/>
+</kw>
+<status status="FAIL" starttime="20230308 22:46:08.611" endtime="20230308 22:46:58.297"/>
+</kw>
+<kw name="Encerrar Testes" library="Keywords" type="TEARDOWN">
+<msg timestamp="20230308 22:46:58.302" level="FAIL">User keyword 'Encerrar Testes' contains no keywords.</msg>
+<status status="FAIL" starttime="20230308 22:46:58.301" endtime="20230308 22:46:58.303">User keyword 'Encerrar Testes' contains no keywords.</status>
+</kw>
+<status status="FAIL" starttime="20230308 22:45:05.647" endtime="20230308 22:46:58.305">ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=110.0.5481.105)
+Stacktrace:
+Backtrace:
+	(No symbol) [0x00716643]
+	(No symbol) [0x006ABE21]
+	(No symbol) [0x005AD960]
+	(No symbol) [0x005E23A7]
+	(No symbol) [0x005D6B13]
+	(No symbol) [0x005FFD7C]
+	(No symbol) [0x005D641F]
+	(No symbol) [0x006000D4]
+	(No symbol) [0x00616B09]
+	(No symbol) [0x005FFB76]
+	(No symbol) [0x005D49C1]
+	(No symbol) [0x005D5E5D]
+	GetHandleVerifier [0x0098A142+2497106]
+	GetHandleVerifier [0x009B85D3+2686691]
+	GetHandleVerifier [0x009BBB9C+2700460]
+	GetHandleVerifier [0x007C3B10+635936]
+	(No symbol) [0x006B4A1F]
+	(No symbol) [0x006BA418]
+	(No symbol) [0x006BA505]
+	(No symbol) [0x006C508B]
+	BaseThreadInitThunk [0x763300F9+25]
+	RtlGetAppContainerNamedObjectPath [0x77967BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x77967B8E+238]
+
 
 Also teardown failed:
-No keyword with name 'Fechar navegador' found.</status>
+User keyword 'Encerrar Testes' contains no keywords.</status>
 </test>
-<status status="FAIL" starttime="20221116 10:55:12.179" endtime="20221116 10:55:12.741"/>
+<doc>Falta ajustar 2 entrada do bot da binary
+reteste pra caso de falha
+terminar fazendo um relatorio do resultado do bot
+mandar por email, e rodar na nuvem.</doc>
+<status status="FAIL" starttime="20230308 22:44:59.781" endtime="20230308 22:46:58.316"/>
 </suite>
-<status status="FAIL" starttime="20221116 10:55:12.107" endtime="20221116 10:55:12.747"/>
+<status status="FAIL" starttime="20230308 22:44:59.762" endtime="20230308 22:46:58.322"/>
+</suite>
+<status status="FAIL" starttime="20230308 22:44:59.689" endtime="20230308 22:46:58.327"/>
 </suite>
 <statistics>
 <total>
 <stat pass="0" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="0" fail="1" skip="0">Site</stat>
 </tag>
 <suite>
 <stat pass="0" fail="1" skip="0" id="s1" name="Testedepython">Testedepython</stat>
-<stat pass="0" fail="1" skip="0" id="s1-s1" name="Estrutura">Testedepython.Estrutura</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="TestCase">Testedepython.TestCase</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1" name="Estudobinary">Testedepython.TestCase.Estudobinary</stat>
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20221116 10:55:12.074" level="ERROR">Error in file 'C:\Users\Dell Latitude\OneDrive\Documentos\testedepython\estrutura.robot' on line 3: Non-existing setting '[Documentation]'. Did you mean:
-    Documentation</msg>
-<msg timestamp="20221116 10:55:12.565" level="ERROR">Error in file 'C:\Users\Dell Latitude\OneDrive\Documentos\testedepython\estrutura.robot' on line 4: Resource file 'youtube_resource.robot' does not exist.</msg>
 </errors>
 </robot>
