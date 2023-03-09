@@ -19,9 +19,9 @@ Prencher os campos
     Wait Until Element Is Visible    ${log}      60
     Click Element  ${log}
     Wait Until Element Is Visible    ${Email}      20
-    SeleniumLibrary.Input Text     ${Email}      
+    SeleniumLibrary.Input Text     ${Email}         matvieira.souza18@gmail.com
     Wait Until Element Is Visible    ${Senha}      20
-    SeleniumLibrary.Input Text    ${Senha}     
+    SeleniumLibrary.Input Text    ${Senha}          Acessomoney18 
     Clicar no login
     Wait Until Element Is Visible    ${No_Tranks}      20
     Click Element     ${No_Tranks} 
@@ -103,8 +103,8 @@ Encerrar Testes
 
 Cadastro da Central Bots
     Wait Until Element Is Visible   ${EMAIL_CENTRAL}        15
-    SeleniumLibrary.Input Text      ${EMAIL_CENTRAL}         
-    SeleniumLibrary.Input Text      ${SENHA_CENTRAL}        
+    SeleniumLibrary.Input Text      ${EMAIL_CENTRAL}        matvieira.souza18@gmail.com    
+    SeleniumLibrary.Input Text      ${SENHA_CENTRAL}        Transformado07 
     Click Element                   ${LOGIN_CENTRAL}
     Click Element                   ${FECHAR}
     Click Element                   ${MEUS_BOTS}
@@ -114,8 +114,8 @@ Cadastro da Central Bots
     Sleep   2
     Click Element                   ${Login_bot}
     Sleep   2
-    SeleniumLibrary.Input Text      ${EMAIL_BINARY}            
-    SeleniumLibrary.Input Text      ${SENHA_BINARY}         
+    SeleniumLibrary.Input Text      ${EMAIL_BINARY}      matvieira.souza18@gmail.com       
+    SeleniumLibrary.Input Text      ${SENHA_BINARY}      Acessomoney18   
     Click Element                   ${LOGIN_BINARY}             
     
 Acessar Conta Teste
